@@ -16,9 +16,7 @@ docker images
 
 En la captura se puede comprobar que aparece la imagen `alpine` con la etiqueta `3.22`.
 
-### Captura
-
-[image]
+![ALpine 1.png](ALpine%201.png)
 
 ---
 
@@ -36,9 +34,7 @@ Después comprobamos su estado con:
 docker ps -a
 ```
 
-### Captura
-
-[image]
+![Alpine2.png](Alpine2.png)
 
 ---
 
@@ -55,9 +51,7 @@ Las opciones `-i` y `-t` son necesarias para poder trabajar de forma interactiva
 * `-i` permite mantener la entrada estándar conectada.
 * `-t` crea una terminal para poder escribir y trabajar desde ella.
 
-### Captura
-
-[image]
+![Alpine 3.png](Alpine%203.png)
 
 ---
 
@@ -79,11 +73,7 @@ ping -c 3 google.com
 
 El ping funcionó correctamente, por lo que el contenedor tiene conexión de red hacia Internet.
 
-### Capturas
-
-[image]
-
-[image]
+![ALpine 4.png](ALpine%204.png)
 
 ---
 
@@ -107,12 +97,8 @@ Con los dos contenedores funcionando comprobamos la comunicación entre ellos:
 * **Por IP:** funcionó correctamente porque los contenedores pueden comunicarse mediante sus direcciones IP.
 * **Por nombre:** no funcionó (`bad address`) porque la red `bridge` por defecto no permite resolver los nombres de los contenedores.
 
-### Capturas
-
-[image]
-
-[image]
-
+![ALpine 5.png](ALpine%205.png)
+![Captura desde 2026-09-30 14-02-32.png](Captura%20desde%202026-09-30%2014-02-32.png)
 ---
 
 ## 6. Consumo de memoria
@@ -125,9 +111,7 @@ docker stats
 
 Este comando muestra el consumo de recursos de los contenedores, incluida la memoria.
 
-### Captura
-
-[image]
+![Alpine 6.png](Alpine%206.png)
 
 ---
 
@@ -147,9 +131,7 @@ docker stats
 
 ya no aparecen, porque `docker stats` solo muestra los contenedores que están en ejecución.
 
-### Captura
-
-[image]
+![7.png](7.png)
 
 ---
 
@@ -163,6 +145,4 @@ docker system df
 
 Este comando muestra el espacio utilizado por las imágenes y los contenedores.
 
-### Captura
-
-[image]
+![Captura desde 2026-09-30 13-51-18.png](Captura%20desde%202026-09-30%2013-51-18.png)
