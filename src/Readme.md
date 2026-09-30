@@ -98,7 +98,7 @@ Con los dos contenedores funcionando comprobamos la comunicación entre ellos:
 * **Por nombre:** no funcionó (`bad address`) porque la red `bridge` por defecto no permite resolver los nombres de los contenedores.
 
 ![ALpine 5.png](ALpine%205.png)
-![Captura desde 2026-09-30 14-02-32.png](Captura%20desde%202026-09-30%2014-02-32.png)
+![Alpine 6.png](Alpine%206.png)
 ---
 
 ## 6. Consumo de memoria
@@ -111,7 +111,7 @@ docker stats
 
 Este comando muestra el consumo de recursos de los contenedores, incluida la memoria.
 
-![Alpine 6.png](Alpine%206.png)
+![Captura desde 2026-09-30 13-51-18.png](Captura%20desde%202026-09-30%2013-51-18.png)
 
 ---
 
@@ -145,4 +145,4 @@ docker system df
 
 Este comando muestra el espacio utilizado por las imágenes y los contenedores.
 
-![Captura desde 2026-09-30 13-51-18.png](Captura%20desde%202026-09-30%2013-51-18.png)
+![Captura desde 2026-09-30 14-02-32.png](Captura%20desde%202026-09-30%2014-02-32.png)
